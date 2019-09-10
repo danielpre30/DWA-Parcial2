@@ -1,0 +1,10 @@
+.img-container{
+  margin: auto;
+  padding: 4em 2em;
+}
+
+.letters-container{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  grid-gap: 2em;
+}
