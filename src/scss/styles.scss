@@ -2,23 +2,34 @@
 @import "./abstracts/variables";
 @import "./layout/container";
 
-$color:blue;
-$color-text:white;
 
+.img{
+
+    &-container{
+    margin: auto;
+    padding: 4em 2em;
+    }
+
+    &-sign{
+        min-width: 300px;
+        min-height: 400px;
+        border: 2px solid black;
+        display:block;
+        margin:auto;
+    }
+  }
+  
+  .letters-container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 2em;
+  }
 .header{
     text-align: center;
     color: $color-text;
     background-color: $color;
     padding: 1.5em 0;
     margin: 0;
-}
-
-.img-sign{
-    min-width: 300px;
-    min-height: 400px;
-    border: 2px solid black;
-    display:block;
-    margin:auto;
 }
 
 .letter{
